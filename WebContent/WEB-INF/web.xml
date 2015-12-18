@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+  <display-name>Phonebuzz</display-name>
+  <welcome-file-list>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>CallOutServlet</servlet-name>
+    <servlet-class>jrd.phonebuzz.CallOutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GreetingServlet</servlet-name>
+    <servlet-class>jrd.phonebuzz.GreetingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GameStartServlet</servlet-name>
+    <servlet-class>jrd.phonebuzz.GameStartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>HandleGameInputServlet</servlet-name>
+    <servlet-class>jrd.phonebuzz.HandleGameInputServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CallOutServlet</servlet-name>
+    <url-pattern>/callout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GreetingServlet</servlet-name>
+    <url-pattern>/greeting</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GameStartServlet</servlet-name>
+    <url-pattern>/gamestart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HandleGameInputServlet</servlet-name>
+    <url-pattern>/handleinput</url-pattern>
+  </servlet-mapping>
+</web-app>
